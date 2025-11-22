@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Алтын дүкен — Aurum</title>
+  <meta name="description" content="Aurum — заманауи алтын әшекей және салым өнімдері дүкені" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* қараға жақын, сәнді фон */
+      --card:#0b1220;
+      --accent:#d4af37; /* алтын түсі */
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#081024 0%, #0f1724 100%); color:#e6eef8; -webkit-font-smoothing:antialiased}
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 28px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;background:linear-gradient(135deg,#b58f2f,#ffd87a);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#08202a;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 16px;border-radius:10px;font-weight:700}
+    .hero{display:grid;grid-template-columns:1fr 460px;gap:32px;padding:40px 28px;align-items:center}
+    .hero h1{font-size:40px;line-height:1.02;margin:0}
+    .hero p{color:var(--muted);margin:14px 0 20px}
+    .cta-row{display:flex;gap:12px}
+    .primary{background:linear-gradient(90deg,var(--accent),#ffd77a);color:#081022;border:none;padding:12px 18px;border-radius:12px;font-weight:700;cursor:pointer}
+    .secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:12px 18px;border-radius:12px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:18px;padding:18px;box-shadow:0 8px 30px rgba(2,6,23,0.6);display:flex;flex-direction:column;gap:12px}
+    .price-big{font-size:22px;font-weight:800;color:var(--accent)}
+
+
+
+.products{padding:18px 28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);padding:12px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.03);transition:transform .22s ease, box-shadow .22s ease}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(2,6,23,0.6)}
+.product-img{width:100%;height:220px;object-fit:cover;border-radius:8px;background:linear-gradient(180deg,#0b1220,#061226);display:block}
+.prod-title{margin:10px 0 6px;font-weight:700}
+.prod-desc{color:var(--muted);font-size:13px;margin-bottom:8px}
+.prod-footer{display:flex;align-items:center;justify-content:space-between}
+.tag{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:700}
+
+    footer{padding:34px 28px;margin-top:28px;border-top:1px solid rgba(255,255,255,0.02);color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr 360px}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:720px){
+      header{padding:16px}
+      .hero{grid-template-columns:1fr;gap:20px;padding:20px}
+      .grid{grid-template-columns:1fr}
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">Au</div>
+      <div>
+        <div style="font-weight:800">Aurum</div>
+        <div class="muted" style="font-size:12px">Алтын әсемдік — сенің сәнің</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#products">Өнімдер</a>
+      <a href="#about">Біз туралы</a>
+      <a href="#contact">Байланыс</a>
+      <button class="btn">Кіру</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Шынайы алтын — киең мен сенімді сатып алу</h1>
+        <p>Үйден шықпай-ақ алтын сақина, монета немесе инвестициялық алтын сатып алыңыз. Барлық өнім сертификатталған, қауіпсіз төлем және жеткізу қолжетімді.</p>
+        <div class="cta-row">
+          <a href="https://wa.me/77051950578?text=Сәлеметсіз%20бе,%20мен%20осы%20тауарды%20сатып%20алғым%20келеді" 
+   class="primary" 
+   style="padding:8px 12px;display:inline-block;text-decoration:none;">
+ Қазір сатып алу
+</a>
+<a href="https://t.me/+FFVUPo8JE103Yzhi" 
+   target="_blank" 
+   style="padding:8px 12px;display:inline-block;text-decoration:none;background:#229ED9;color:white;border-radius:6px;margin-top:6px;
+   border-radius:8px; text-decoration:none; font-size:18px;">
+   Өнімдерді қарау
+</a>
+
+
+        </div>
+
+        <div style="margin-top:22px;display:flex;gap:12px">
+          <div class="hero-card">
+            <div class="center"><strong>Бүгінгі баға</strong><div style="flex:1"></div><div class="price-big">₸ — 51 200/г</div></div>
+            <div class="muted" style="font-size:13px">(баға мысал ретінде көрсетілген — нақты бағаларын өзгерту қажет)</div>
+          </div>
+          <div class="hero-card">
+            <div><strong>Сенімділік</strong></div>
+            <div class="muted">Сертификат, кепілдеме, қауіпсіз жеткізу</div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div style="position:relative">
+          <!-- Қойылатын суретті мына src-қа қой: /images/hero-gold.jpg немесе толық URL -->
+          <img src="3.jpg" alt="Алтын бұйым" style="width:100%;border-radius:16px;height:420px;object-fit:cover;box-shadow:0 20px 50px rgba(2,6,23,0.6)">
+          <div style="position:absolute;left:18px;bottom:18px;background:linear-gradient(90deg, rgba(8,10,12,0.6), rgba(8,10,12,0.3));padding:10px 14px;border-radius:12px">
+            <div style="font-weight:700">Тренд — Қолдан жасалған сақина</div>
+            <div class="muted" style="font-size:13px">Ең жақсы сатылым </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+<section id="products" class="products">
+  <h2 style="margin:8px 0 14px">Танымал өнімдер</h2>
+  <div class="grid">
+
+    <article class="card">
+      <img class="product-img" src="8.webp.jpg" alt="Алтын сақина">
+      <div class="prod-title">Алтын сақина — 585</div>
+      <div class="prod-desc">
+        <h3>Классикалық дизайн, 585 пробы. Салмағы 3.2 гр.</h3>
+      </div>
+      <p class="price">Бағасы: жеке өлшеміне қарай</p>
+      <a href="https://wa.me/77051950578?text=Сәлеметсіз%20бе,%20мен%20осы%20тауарды%20сатып%20алғым%20келеді" 
+         class="primary" 
+         style="padding:8px 12px;display:inline-block;text-decoration:none;">
+         Сатып алу
+      </a>
+    </article>
+
+    <article class="card">
+      <img src="7.webp.jpg" alt="Алтын білезік" class="product-img">
+      <h3>Алтын білезік</h3>
+      <div class="prod-desc">Салмағы: 8,25 гр / 19,5 p</div>
+      <p class="price">Бағасы: жеке өлшеміне қарай</p>
+      <a href="https://wa.me/77051950578?text=Сәлеметсіз%20бе,%20мен%20осы%20тауарды%20сатып%20алғым%20келеді" 
+         class="primary" 
+         style="padding:8px 12px;display:inline-block;text-decoration:none;">
+         Сатып алу
+      </a>
+    </article>
+
+    <article class="card">
+      <img class="product-img" src="комплект.jpg" alt="Алтын комплект">
+      <div class="prod-title">Алтын комплект (браслет + сырға + сақина)</div>
+      <p class="price">Бағасы: жеке өлшеміне қарай</p>
+      <a href="https://wa.me/77051950578?text=Сәлеметсіз%20бе,%20мен%20осы%20тауарды%20сатып%20алғым%20келеді" 
+         class="primary" 
+         style="padding:8px 12px;display:inline-block;text-decoration:none;">
+         Сатып алу
+      </a>
+    </article>
+
+  </div>
+</section>
+
+
+    <section id="about" style="padding:20px 28px">
+      <h3>Біз туралы</h3>
+      <p class="muted">Aurum — сенімді алтын дүкені. Біз тек сертификатталған өнімдер ұсынамыз және әрбір тапсырысты сақтықпен қаптаймыз. Қосымша тексеру қажет болса — бізге хабарласыңыз.</p>
+    </section>
+
+    <section id="contact" style="padding:20px 28px">
+      <h3>Байланыс</h3>
+      <p class="muted">Тел: <strong>+7 705 195 05 78</strong> · Email: <strong>sales@aurum.example</strong></p>
+      <p class="muted">Немесе WhatsApp арқылы байланысыңыз: <a href="#" style="color:var(--accent);text-decoration:none">Хабарлама жіберу</a></p>
+
+
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <div style="font-weight:700">Aurum</div>
+        <div class="muted">© 2025 Барлық құқықтар қорғалған</div>
+      </div>
+      <div class="muted">Жеткізу · Сертификаттау · Қауіпсіз төлем</div>
+    </div>
+  </footer>
+
+  <!-- Нұсқау: суреттерді /images қалтасына салыңыз немесе толық URL көрсетіңіз. "Сатып алу" кнопкасы қайда апаратынын өзіңіз байланыстыра аласыз (мысалы, төлем бетіне немесе модалға). -->
+  <script src="1.js"></script>
+
+</body>
+</html>
+
